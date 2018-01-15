@@ -9,21 +9,23 @@ public class SortTest {
 	@Test
 	public void bubbleSortTest(){
 		System.out.println("now create Out of Order Int Array");
-		int [] arr = new int[10];
-		for(int i=0;i<arr.length;i++){
-			arr[i] = (int) (Math.random()*100);
-		}
-		traverse(arr);
+		int[] arr = SortUitl.getOutOfOrderArray(10,100);
+		SortUitl.traverse(arr);
 		SortUitl.bubbleSort(arr);
 		System.out.println("already bubbleSort");
-		traverse(arr);
+		System.out.println("now traverse Array");
+		SortUitl.traverse(arr);
 	}
 	
-	public void traverse(int arr[]){
+	
+	
+	@Test
+	public void selectSortTest(){
+		System.out.println("now ready selectSort");
+		System.out.println("now create Out of Order Int Array");
+		int[] arr = SortUitl.getOutOfOrderArray(40,1000);
+		SortUitl.selectSort(arr);
 		System.out.println("now traverse Array");
-		for(int i=0;i<arr.length;i++){
-			System.out.print(arr[i]+",");
-		}
-		System.out.println();
+		SortUitl.traverse(arr);
 	}
 }
