@@ -27,9 +27,22 @@
 
    首先取最前的元素和其余元素比较，如果最前的元素比那个元素更大，则不需交换位置，否则就要把那个元素的位置调到最前。
 
-   
+   图示
+
+   ![选择排序](https://raw.githubusercontent.com/XHang/algorithm/master/src/main/resources/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.jpg)
+
+2: 冒泡排序
+
+跟选择排序大致一样，就是比较-交换，然后每一轮比较后，末尾或者开头的元素总是最值
+
+但是冒泡排序比较的对象时是相邻元素
+
+图示
+
+![冒泡排序](<https://raw.githubusercontent.com/XHang/algorithm/master/src/main/resources/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.jpg>)
 
 # 三： 算法第四版笔记
+
 ## 3.1  基础编程模型
 1. 有时候，一些代码上的加减乘除运算，其结果，未必准确
     比如说，在java上，定义一个计算式`5/3`其结果将是1，而非1.666...
