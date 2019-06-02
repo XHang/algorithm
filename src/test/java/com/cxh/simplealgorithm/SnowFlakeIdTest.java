@@ -25,4 +25,11 @@ public class SnowFlakeIdTest {
             System.out.println("id is 【" + id + "】");
         }
     }
+
+    @Test
+    public void test(){
+        System.out.println(Long.toBinaryString(-1L));
+    }
+
+
 }
