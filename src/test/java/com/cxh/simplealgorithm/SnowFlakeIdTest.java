@@ -28,7 +28,11 @@ public class SnowFlakeIdTest {
 
     @Test
     public void test(){
-        System.out.println(Long.toBinaryString(-1L));
+        System.out.println(Long.toBinaryString((-1)<<32));
+        System.out.println(Long.toBinaryString(-1));
+        System.out.println(Long.toBinaryString((-1L)<<32));
+
+
     }
 
 
